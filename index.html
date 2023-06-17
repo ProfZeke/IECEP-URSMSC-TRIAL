@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>IECEP-URSMSC</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/987020067f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="shortcut icon" type="Image" href="Image/IECEP.png">
+</head>
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="Image/IECEP.png"></a>
+            <div class="nav-links-a">
+                <aa>
+                    <ab><a href="" id="home">IECEP-URSMSC</a></ab>
+                </aa>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#officer">OFFICERS</a></li>
+                    <li><a href="#events&program">EVENTS & PROGRAM</a></li>
+                    <li><a href="#contacts">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onClick="showMenu()"></i>
+        </nav>
+    <div class="text-box" id="home">
+        <h1>IECEP-URSMSC</h1>
+        <p>Electronic communication makes possible what has previously been excluded:<br>
+            namely, active, simultaneous and reciprocal contact between individuals across all frontiers constituted by countries, religions and continents.
+        </p>
+        <a onClick="window.location.href='https://www.facebook.com/iecepursmsc'" class="fb-btn">Visit Our FB Page</a>
+
+    </div>
+
+
+    </section>
+<!---- officers --->
+    <div class="container" id="officer">
+        <section class="officers">
+        <h1 data-aos="fade-up">Here are the Officers for S.Y. 2023-2024</h1>
+        <p data-aos="fade-up">Election was held last April 27, 2023 in the University of Rizal System - Morong Campus<br>
+            during the last General Assembly of the previous organization</p>
+        </section>
+
+        <section class="pfp">
+        <h2 data-aos="fade-up">Officers' Profiles</h2>
+        </section>
+        <div data-aos="fade-up">
+        <div class="profile-card" onClick="window.location.href='https://www.facebook.com/jeanne.morado'">
+        <img src="Image/p1.jpg" alt="Officer 1" >
+        <h2 >Je-Ann Morado</h2>
+        <p>Position: President</p>
+        <p>Bio: Kahit anong quotes.</p>
+        </div>
+        </div>
+
+        <div data-aos="fade-up">
+        <div class="profile-card" onClick="window.location.href='https://www.facebook.com/kevin.clumsy'">
+        <img src="Image/p2.jpg" alt="Officer 2" >
+        <h2>Kevin Acebuche</h2>
+        <p>Position: Vice President:External</p>
+        <p>Bio: Kahit anong quotes.</p>
+        </div>
+        </div>
+    </div>
+    <!-----this is JavaScript for Menu---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
